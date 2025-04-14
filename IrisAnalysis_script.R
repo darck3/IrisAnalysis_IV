@@ -1,3 +1,5 @@
+######################################################################################################################
+
 #Installing and Initializing Packages
 
 install.packages("tidyverse")
@@ -32,7 +34,10 @@ iris_virginica_setosa <- iris %>% filter(Species == "virginica")
 
 #Data Visualization with ggplot2
 
-ggplot(iris_virginica, aes(x = Sepal.Length, y = Petal.Length, colour = Species)) +
-  geom_point() + + geom_smooth() + 
+ggplot(iris_virginica, aes(x = Sepal.Length, y = Petal.Length)) +
+  geom_point() + 
+  geom_smooth() + 
   labs(title = "Sepal Length vs Petal.Length", x = "Sepal Length", y = "Petal.Length") + theme_minimal() 
+  
 
+######################################################################################################################
