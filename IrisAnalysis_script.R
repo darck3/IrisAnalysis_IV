@@ -35,6 +35,3 @@ iris_virginica_setosa <- iris %>% filter(Species == "virginica")
 ggplot(iris_virginica, aes(x = Sepal.Length, y = Petal.Length, colour = Species)) +
   geom_point() + + geom_smooth() + 
   labs(title = "Sepal Length vs Petal.Length", x = "Sepal Length", y = "Petal.Length") + theme_minimal() 
-
-
-renv::snapshot()
